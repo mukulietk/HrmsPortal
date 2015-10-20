@@ -14,9 +14,9 @@ public class MstDynamicRegionBean
 
   public MstDynamicRegionBean()
   {
-    HrmsSessionBean sessionBean=(HrmsSessionBean)JsfUtils.getManagedBean("MstDynamicRegionBean");
-    sessionBean.setFirstName("Mukul");
-    sessionBean.setLastName("Gupta");
+    //HrmsSessionBean sessionBean=(HrmsSessionBean)JsfUtils.getManagedBean("MstDynamicRegionBean");
+    //sessionBean.setFirstName("Mukul");
+    //sessionBean.setLastName("Gupta");
   }
 
   public TaskFlowId getDynamicTaskFlowId()

@@ -1,4 +1,39 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
-  <af:panelGroupLayout id="pgl1"/>
+  <af:panelGroupLayout id="pgl1">
+    <af:link id="l1">
+    <?audit suppress oracle.jdeveloper.jsp.validate-children?>
+    <af:panelGroupLayout id="pgl2" layout="vertical">
+        <af:outputFormatted id="of1" value="My Team" styleClass="WBDashboardCardTitle"/>
+        <af:panelGridLayout id="pgl3">
+          <af:gridRow marginTop="0px" height="auto" marginBottom="0px" id="gr1">
+            <af:gridCell marginStart="0px" width="50%" id="gc1" halign="stretch">
+            <af:panelGroupLayout id="pgltm1" halign="center" layout="vertical">
+                                    <af:image source="/resources/images/qual_mygroup_70.png" shortDesc="My Group"
+                                              styleClass="WBDashboardCardIcon" id="i1"/>
+                                    <af:outputText id="groupBadge"
+                                                   styleClass="WBDashboardCardBadge" value="My Groups"/>
+                                </af:panelGroupLayout>
+             </af:gridCell>                   
+            <af:gridCell marginStart="0px" width="50%" marginEnd="0px" id="gc2" halign="stretch">
+              <af:panelGroupLayout id="pgl4" halign="center" layout="vertical">
+                <af:image source="/resources/images/qual_myorg_70.png" shortDesc="My Organization"
+                          styleClass="WBDashboardCardIcon" id="i2"/>
+                <af:outputText id="ot1" styleClass="WBDashboardCardBadge" value="My Directs"/>
+              </af:panelGroupLayout>
+            </af:gridCell>
+          </af:gridRow>
+          <af:gridRow id="grbdgs2">
+                            <af:gridCell id="gcbdgs3" halign="center">
+                                <af:outputText id="groupLbl" value="My Group" styleClass="WBDashboardLabel"/>
+                            </af:gridCell>
+                            <af:gridCell id="gcbdgs4" halign="center">
+                                <af:outputText id="directLbl" value="My Directs" styleClass="WBDashboardLabel"/>
+                            </af:gridCell>
+                        </af:gridRow>
+        </af:panelGridLayout>
+      </af:panelGroupLayout>
+    </af:link>
+    
+  </af:panelGroupLayout>
 </ui:composition>

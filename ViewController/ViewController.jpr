@@ -185,7 +185,7 @@
          <hash n="Default">
             <value n="custom" v="false"/>
             <value n="name" v="Default"/>
-            <url n="targetURL" path="public_html/index.html"/>
+            <url n="targetURL" path="public_html/index.jsf"/>
          </hash>
       </hash>
    </hash>
